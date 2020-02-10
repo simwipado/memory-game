@@ -80,9 +80,15 @@ function App () {
   return (
     <div className='app'>
       <div
-        className='loader'
-        style={{ display: loading ? 'block' : 'none' }}
-      ></div>
+        style={{
+          display: loading ? 'flex' : 'none',
+          flexFlow: 'column',
+          alignItems: 'center'
+        }}
+      >
+        <div className='loader'></div>
+        <div>loading images</div>
+      </div>
       <div className='cards' style={{ display: loading ? 'none' : 'flex' }}>
         {cards}
       </div>

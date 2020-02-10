@@ -4,6 +4,7 @@
 clone the repository 
 ```
 git clone https://github.com/simwipado/memory-game
+cd memory-game
 ```
 install packages
 ```
@@ -18,6 +19,7 @@ npm start
 clone the repository 
 ```
 git clone https://github.com/simwipado/memory-game
+cd memory-game
 ```
 install production packages
 ```

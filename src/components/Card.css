@@ -1,0 +1,88 @@
+.card {
+  position: relative;
+  width: 150px;
+  height: 180px;
+
+  margin: 5px;
+
+  transform: scale(0.9);
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.card * {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: solid 2px;
+}
+
+.matched {
+  transform: scale(1);
+}
+
+.matched * {
+  border-radius: 10;
+}
+
+.card .card-back {
+  display: block;
+}
+.card .card-face {
+  display: none;
+}
+
+.flipped .card-back {
+  display: none;
+}
+.flipped .card-face {
+  display: block;
+}
+
+.card-back {
+  background-color: rgb(25, 25, 25);
+}
+
+.shaking {
+  animation: shake 0.5s;
+}
+
+.joker {
+  background-image: linear-gradient(#0d2c7d, #949b9a);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg) scale(0.9);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg) scale(0.9);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg) scale(0.9);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg) scale(0.9);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg) scale(0.9);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg) scale(0.9);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg) scale(0.9);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg) scale(0.9);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg) scale(0.9);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg) scale(0.9);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg) scale(0.9);
+  }
+}
